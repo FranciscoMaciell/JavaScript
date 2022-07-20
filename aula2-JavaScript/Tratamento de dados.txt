@@ -1,0 +1,27 @@
+JAVASCRIPT
+
+TRATAMENTO DE DADOS 
+    CONVERÇÃO DE STRINGS PARA NUMEROS:
+
+	Number.parseInt(var)
+	Number.parseFloat(var)
+ou colocar apenas Number
+
+    CONVERÇÃO DE NUMEROS PARA STRINGS:
+
+	String(n)
+	n.toString()
+
+    TEMPLAT STRINGS
+	`${nome} de ${Idade} teve nota igual à ${nota}`
+
+    FORMATANDO STRINGS
+	s(string).length - Conta os caracteres da string
+	s(string).toUpperCase() - Todos para maiusculas
+	s(string).toLowerCase() - Todos para minusculas
+	document.write(string com o texto desejado) - escreve na tela
+
+    FORMATANDO NÚMEROS
+	var.toFixed(valor de casas) - Numero de casas após a virgúla
+	var.replace('.', ',')
+	var.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})

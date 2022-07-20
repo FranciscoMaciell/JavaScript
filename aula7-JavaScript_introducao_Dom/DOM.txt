@@ -1,0 +1,18 @@
+INTRODUÇÃO AO DOM
+
+PEGANDO POR TAG(MARCA)
+	var nome = window.document.getElementsByTagName(nome da tag)[posição da tag]
+
+PEGANDO POR ID
+	var nome = window.document.gerElementById()
+
+PEGANDO POR NOME
+	var nome = window.document.gerElementsByName()[]
+
+PEGANDO POR CLASSE
+	var nome = window.document.gerElementsByClassName()[]
+
+
+
+
+
