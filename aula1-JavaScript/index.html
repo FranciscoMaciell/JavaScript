@@ -4,28 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro programa</title>
+    <title>Curso de JavaScript</title>
     <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
         body{
-            font: 20pt Arial;
-            background-color: antiquewhite;
+            background: antiquewhite;
+            font-size: 2em;
+        }
+        h1{
+            text-align: center;
+            color: blue;
         }
     </style>
 </head>
 <body>
-    <h1>Olá, mundo!</h1>
-    <p>Já me livrei da maldição!</p>
+    <h1>olá, mundo!</h1>
+    <p>Me livrei da maldeção</p>
     <script>
-        var n1=Number(window.prompt("Digite um numero: "));
-        var n2=Number(window.prompt("Digite outro numero: "));
-        var s=n1+n2;
-        window.alert(`A soma entre ${n1} e ${n2} é ${s}`);
 
-        /*
-        s.length contador de caracteres
-        s.toUpperCase() tudo para maiusculas
-        s.toLowerCase() tudo para minusculas
-        */
+        // COMANDO DE ALERTA
+        window.alert('Minha primeira mensagem!');
+        // COMANDO PARA CONFIRMAÇÃO
+        window.confirm('ESTA GOSTANDO DE JAVASCRIPT?');
+        // COMANDO PARA PEGAR INFORMAÇÃO
+        window.prompt('Qual é o seu nome?');
     </script>
 </body>
 </html>
