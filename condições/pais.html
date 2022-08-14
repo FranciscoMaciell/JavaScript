@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paises</title>
+</head>
+<body>
+    <h1>PAÍS</h1>
+    <p><label for="pais1">Nome do país onde você nasceu</label></p>
+    <input type="text" name="pais" id="pais1" onclick="entrar">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="mqp">
+
+    </div>
+
+    <script>
+        
+        function verificar(){
+            var npais=document.querySelector('input#pais1');
+            var mpais=(npais.value)
+            var mqp=document.querySelector('div#mqp');
+            if(mpais=='Brasil'){
+                mqp.innerHTML=`Você nasceu no ${mpais} e é brasileiro`;
+            }else{
+                mqp.innerHTML=`Você nasceu em ${mpais} é estrangeiro`;
+            }
+        }
+
+        var p=document.getElementById('pais1');
+        p.addEventListener('mouseenter', entrar);
+        p.addEventListener('mouseout', sair);
+
+        function entrar(){
+            p.style.borderColor='black';
+        }
+
+        function sair(){
+            p.style.borderColor=null;
+        }
+    </script>
+</body>
+</html>

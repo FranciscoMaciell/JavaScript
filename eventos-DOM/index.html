@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 1.5em;
+            background: antiquewhite;
+        }
+
+        div{
+            font-size: 1.5em;
+        }
+
+        div#area{
+            background: rgb(121, 216, 121);
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- EVENTOS QUE PODEM ACONTECER COM A DIV 
+        * mouseenter - mouse entrar na div
+        * mousemove - mouse se movimentar dentro da div
+        * mousedown - click e segure
+        * mouseup - quando soltar o botão do mouse
+        * click - clica e solta
+        * mouseout - quando sair de dentro da div
+
+        site: event reference
+    -->
+    <div id="area">
+        interaja...
+    </div>
+    <script>
+        var a=document.getElementById('area');
+        a.addEventListener('click', clicar);
+        a.addEventListener('mouseenter', entrar);
+        a.addEventListener('mouseout', sair);
+
+        function clicar(){
+            a.innerText='Clicou!';
+            a.style.background='red';
+        }
+
+        function entrar(){
+            a.innerText='Entrou';
+            a.style.background='blue';
+        }
+
+        function sair(){
+            a.innerText='Saiu';
+            a.style.background= 'rgb(121, 216, 121)';
+        }
+    </script>
+</body>
+</html>
