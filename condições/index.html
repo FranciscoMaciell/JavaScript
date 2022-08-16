@@ -7,20 +7,26 @@
     <title>Condições</title>
 </head>
 <body>
-    <h1>SISTEMAS DE MULTAS</h1>
-    <label for="txtvel">Velocidade do veiculo</label>
-    <input type="number" name="txtvel" id="txtvel"> km/h
-    <input type="button" value="verificar" onclick="calcular()">
+    <h1>Sistema de Multas</h1>
+    <p>
+        <label for="vel_m">Digite o valor da velocidade</label>
+    </p>
+    <input type="number" name="vel_m" id="vel_m">
+    <input type="button" value="Verificar" onclick="calcular()">
     <div id="res">
 
     </div>
 
     <script>
         function calcular(){
-            var txtv=document.querySelector('input#txtvel');
+            var vel_max=document.querySelector('input#vel_m');
+            var vel=Number(vel_max.value);
             var res=document.querySelector('div#res');
-            var vel=Number(txtv.value);
-            res.innerHTML= `<p>A velocidade do veiculo é <strong>${vel}Km/h</strong></p>`;
+            if(vel>60){
+                res.innerHTML=`A velocidade é de ${vel} você foi multado`;
+            }else{
+                res.innerHTML=`Dirija com segurança, sua velocidade é ${vel} km/h`;
+            }
         }
     </script>
 </body>

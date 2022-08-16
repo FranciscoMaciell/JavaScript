@@ -4,40 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>paises</title>
+    <title>país de origem</title>
 </head>
 <body>
-    <h1>PAÍS</h1>
-    <p><label for="pais1">Nome do país onde você nasceu</label></p>
-    <input type="text" name="pais" id="pais1" onclick="entrar">
+    <h1>Verificar país de origem</h1>
+    <label for="n_pais">Digite o nome do pais de origem</label><br>
+    <input type="text" name="n_pais" id="n_pais">
     <input type="button" value="Verificar" onclick="verificar()">
-    <div id="mqp">
+    <div id="res">
 
     </div>
 
     <script>
-        
         function verificar(){
-            var npais=document.querySelector('input#pais1');
-            var mpais=(npais.value)
-            var mqp=document.querySelector('div#mqp');
-            if(mpais=='Brasil'){
-                mqp.innerHTML=`Você nasceu no ${mpais} e é brasileiro`;
+            var pais=document.querySelector('input#n_pais');
+            var m_pais=(pais.value);
+            var res=document.querySelector('div#res');
+            if(m_pais=='Brasil'){
+                res.innerHTML=`Você nasceu no ${m_pais}, você é brasileiro`;
             }else{
-                mqp.innerHTML=`Você nasceu em ${mpais} é estrangeiro`;
+                res.innerHTML=`Você nasceu em ${m_pais} e é estrangeiro`;
             }
         }
-
-        var p=document.getElementById('pais1');
-        p.addEventListener('mouseenter', entrar);
-        p.addEventListener('mouseout', sair);
+        
+        var s=window.document.getElementById('n_pais');
+        addEventListener('mouseenter', entrar);
+        addEventListener('mouseout', sair);
 
         function entrar(){
-            p.style.borderColor='black';
+            s.style.background='black';
         }
 
         function sair(){
-            p.style.borderColor=null;
+
         }
     </script>
 </body>
