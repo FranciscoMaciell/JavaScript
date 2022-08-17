@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body{
-    background: rgb(94, 134, 243);
+    background: #4aa4ee;
     font: normal 15pt Arial;
 }
 
@@ -11,8 +11,11 @@ header{
 }
 
 section{
+    font-size: 1.5em;
+    font-weight: bolder;
     background: white;
-    width: 500px;
+    max-width: 800px;
+    min-width: 320px;
     margin: auto;
     border-radius: 10px;
     padding: 10px;
@@ -23,5 +26,13 @@ footer{
     color: white;
     text-align: center;
     font-style: italic;
+}
+
+div{
+    text-align: center;
+}
+
+div#foto{
+    margin: auto;
 }
 

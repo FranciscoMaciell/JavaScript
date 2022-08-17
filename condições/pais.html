@@ -9,7 +9,7 @@
 <body>
     <h1>Verificar país de origem</h1>
     <label for="n_pais">Digite o nome do pais de origem</label><br>
-    <input type="text" name="n_pais" id="n_pais">
+    <input type="text" name="n_pais" id="n_pais" mouseenter="entrar()">
     <input type="button" value="Verificar" onclick="verificar()">
     <div id="res">
 
@@ -26,13 +26,13 @@
                 res.innerHTML=`Você nasceu em ${m_pais} e é estrangeiro`;
             }
         }
-        
-        var s=window.document.getElementById('n_pais');
+
+        var set_color=document.getElementById('n_pais');
         addEventListener('mouseenter', entrar);
         addEventListener('mouseout', sair);
-
+        
         function entrar(){
-            s.style.background='black';
+            set_color.style.borderColor='blue'
         }
 
         function sair(){
