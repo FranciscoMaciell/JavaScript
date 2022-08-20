@@ -1,11 +1,15 @@
 function verificar(){
+    // Pega a data atual
     var data=new Date();
+    // data atual recebe ano cm 4 degitos
     var a_atual=data.getFullYear();
+    // ano de nascimento
     var a_nasc=document.querySelector('input#nasc');
     var res=document.querySelector('div#res');
+    // CRIA UMA TAG IMG HTML
     var img=document.createElement('img');
 
-    // set atributo id para foto
+    // set atributo 'id' da tag criada para 'foto'
     img.setAttribute('id', 'foto')
 
     if(a_nasc.value.length==0||Number(a_nasc.value)>a_atual){
