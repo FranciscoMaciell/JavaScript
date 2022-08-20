@@ -1,28 +1,29 @@
 @charset "UTF-8";
 
 *{
-    margin: 0px;
+    padding: 0px;
     margin: 0px;
 }
 
 body{
     background: blue;
     font: normal 15pt Arial;
+    font-weight: bold;
 }
 
 header{
     text-align: center;
-    margin: 20px;
-    color: white;
+    margin: 10px;
 }
 
 section{
     background: white;
     padding: 10px;
+    line-height: 40px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.685);
+    margin: 0px auto 0px auto;
     min-width: 320px;
     max-width: 500px;
-    margin: auto;
-    line-height: 40px;
     border-radius: 10px;
 }
 
@@ -30,8 +31,21 @@ input#nasc{
     width: 100px;
 }
 
+input#fem{
+    margin: 10px;
+}
+
+input#masc{
+    margin: 10px;
+}
+
+div#res{
+    text-align: center;
+}
+
 footer{
     text-align: center;
+    color: white;
     margin: 10px;
-    color: white
+    font-style: italic;
 }

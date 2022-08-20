@@ -4,36 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificador de imagem</title>
+    <title>Verificador de Idades</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Verificador de imagem</h1>
+        <h1>Verificar Idade</h1>
     </header>
     <section>
         <div>
+        
             <p>
                 <label for="nasc">Ano de nascimento</label>
                 <input type="number" name="nasc" id="nasc">
+            </p>           
+            <p>
+                Sexo:
+                <p>
+                    <label for="masc">Masculino</label>
+                    <input type="radio" name="sexo" id="masc" checked>
+                    <label for="fem">Feminino</label>
+                <input type="radio" name="sexo" id="fem">
+                </p>
             </p>
-            Sexo:
-            <input type="radio" name="sexo" id="masc" checked>
-            <label for="masc">Msculino</label>
-            <label for="fem">Feminino</label>
-            <input type="radio" name="sexo" id="fem">
-            <p><input type="button" value="verificar" onclick="verificar()"></p>
+            <input type="button" value="verificar" onclick="verificar()"> 
         </div>
         <div id="res">
-            Preencha os dados acima para ver o resutado
-
+            Preencha os dados acima para ver o resultado
         </div>
     </section>
     <footer>
         &copyCursoemVideo
     </footer>
-    <script src="teste.js">
-
-    </script>
+    <script src="teste.js"></script>
 </body>
 </html>
